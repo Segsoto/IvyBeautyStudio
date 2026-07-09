@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivy Beauty Studio | Salón de Uñas y Manicura en La Guácima, Alajuela</title>
+  <meta name="description" content="Especialistas en manicura spa, esmaltado gel, Gel X, y reforzamiento Luminary en La Guácima, Costa Rica. Agenda tu cita en línea fácilmente." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#FAF8F5" />
+  <meta property="og:title" content="Ivy Beauty Studio | Salón de Uñas y Manicura en La Guácima, Alajuela" />
+  <meta property="og:description" content="Especialistas en manicura spa, esmaltado gel, Gel X, y reforzamiento Luminary en La Guácima, Costa Rica. Agenda tu cita en línea fácilmente." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CR" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2.2rem, 1.4rem + 3vw, 4.6rem);
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+      --color-bg: #FAF8F5;
+      --color-surface: #FFFFFF;
+      --color-surface-alt: #F4EFE8;
+      --color-text: #2F2A26;
+      --color-text-muted: #6E665F;
+      --color-border: rgba(47, 42, 38, 0.12);
+      --color-primary: #7A8B7B;
+      --color-primary-deep: #667567;
+      --color-primary-soft: #E4ECE4;
+      --color-accent: #E6D5C3;
+      --color-accent-deep: #D8C1AA;
+      --color-whatsapp: #25D366;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.75rem;
+      --radius-lg: 1.125rem;
+      --radius-xl: 1.5rem;
+      --radius-full: 999px;
+      --shadow-sm: 0 10px 30px rgba(84, 73, 62, 0.06);
+      --shadow-md: 0 18px 45px rgba(84, 73, 62, 0.08);
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', Arial, sans-serif;
+      --content: 1160px;
+      --header-height: 78px;
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * , *::before, *::after { box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      scroll-padding-top: calc(var(--header-height) + var(--space-4));
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.65;
+      color: var(--color-text);
+      background: var(--color-bg);
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    p { margin: 0; color: var(--color-text-muted); }
+    h1, h2, h3 { margin: 0; line-height: 1.08; color: var(--color-text); }
+    h1, h2 { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.02em; }
+    ul { margin: 0; padding: 0; list-style: none; }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+
+    .skip-link {
+      position: absolute; left: var(--space-4); top: -100%;
+      background: var(--color-surface); color: var(--color-text);
+      padding: var(--space-3) var(--space-4); border-radius: var(--radius-full);
+      z-index: 1000; border: 1px solid var(--color-border);
+    }
+    .skip-link:focus { top: var(--space-4); }
+
+    .container {
+      width: min(calc(100% - 2rem), var(--content));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding-block: clamp(var(--space-12), 9vw, var(--space-24));
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: 0.45rem 0.8rem;
+      border: 1px solid rgba(122, 139, 123, 0.18);
+      border-radius: var(--radius-full);
+      background: rgba(255,255,255,0.7);
+      color: var(--color-primary-deep);
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      background: rgba(250, 248, 245, 0.9);
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+    }
+    .site-header.scrolled {
+      border-color: var(--color-border);
+      box-shadow: var(--shadow-sm);
+      background: rgba(250, 248, 245, 0.96);
+    }
+    .header-inner {
+      min-height: var(--header-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-3);
+      min-height: 44px;
+    }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      color: var(--color-primary-deep);
+    }
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+    }
+    .brand-subtitle {
+      margin-top: 0.2rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--color-text-muted);
+    }
+
+    .nav-toggle {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      background: var(--color-surface);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text);
+    }
+    .nav-toggle svg { width: 20px; height: 20px; }
+
+    .nav-panel {
+      position: absolute;
+      inset: calc(100% + 0.5rem) 1rem auto 1rem;
+      background: rgba(255,255,255,0.98);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-4);
+      box-shadow: var(--shadow-md);
+      display: none;
+    }
+    .nav-panel.open { display: block; }
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0.75rem 0.25rem;
+      font-size: var(--text-sm);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+    }
+    .nav-link:hover, .nav-link:focus-visible,
+    .nav-link.active { color: var(--color-primary-deep); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      min-height: 48px;
+      padding: 0.9rem 1.35rem;
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      transition: transform var(--transition), background var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition);
+      border: 1px solid transparent;
+    }
+    .btn:hover, .btn:focus-visible { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--color-primary);
+      color: #fff;
+      box-shadow: 0 14px 30px rgba(122, 139, 123, 0.18);
+    }
+    .btn-primary:hover, .btn-primary:focus-visible { background: var(--color-primary-deep); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-text);
+      border-color: var(--color-border);
+    }
+    .btn-secondary:hover, .btn-secondary:focus-visible {
+      background: var(--color-surface);
+      border-color: rgba(122, 139, 123, 0.35);
+      color: var(--color-primary-deep);
+    }
+    .btn-line {
+      padding-inline: 0;
+      min-height: 44px;
+      border-radius: 0;
+      border-bottom: 1px solid rgba(122, 139, 123, 0.35);
+      color: var(--color-primary-deep);
+      justify-content: flex-start;
+      font-weight: 500;
+    }
+
+    .desktop-only { display: none; }
+
+    .hero {
+      padding-top: clamp(var(--space-10), 10vw, var(--space-16));
+      padding-bottom: clamp(var(--space-12), 10vw, var(--space-20));
+    }
+    .hero-grid {
+      display: grid;
+      gap: var(--space-8);
+      align-items: center;
+    }
+    .hero-copy {
+      display: grid;
+      gap: var(--space-5);
+    }
+    .hero-copy h1 {
+      font-size: var(--text-2xl);
+      max-width: 12ch;
+    }
+    .hero-copy p {
+      max-width: 58ch;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      padding-top: var(--space-2);
+    }
+    .hero-notes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+    .hero-visual {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(230,213,195,0.55), rgba(122,139,123,0.16));
+      min-height: 24rem;
+      box-shadow: var(--shadow-md);
+    }
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.95), transparent 38%),
+        linear-gradient(140deg, rgba(250,248,245,0.12), rgba(255,255,255,0.55));
+    }
+    .hero-card {
+      position: absolute;
+      inset: auto 1.1rem 1.1rem 1.1rem;
+      background: rgba(255,255,255,0.86);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(47,42,38,0.08);
+      border-radius: calc(var(--radius-xl) - 0.55rem);
+      padding: var(--space-5);
+      display: grid;
+      gap: var(--space-2);
+    }
+    .hero-art {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: var(--space-6);
+    }
+
+    .section-heading {
+      display: grid;
+      gap: var(--space-3);
+      margin-bottom: var(--space-8);
+    }
+    .section-heading h2 { font-size: var(--text-xl); max-width: 14ch; }
+    .section-heading p { max-width: 58ch; }
+
+    .services-wrap {
+      display: grid;
+      gap: var(--space-5);
+    }
+    .service-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      gap: var(--space-4);
+    }
+    .service-top {
+      display: grid;
+      gap: var(--space-2);
+    }
+    .service-top h3 {
+      font-size: var(--text-lg);
+      font-family: var(--font-display);
+      font-weight: 600;
+    }
+    .service-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-muted);
+    }
+    .meta-pill {
+      padding: 0.45rem 0.7rem;
+      border-radius: var(--radius-full);
+      background: var(--color-surface-alt);
+      border: 1px solid rgba(47,42,38,0.06);
+    }
+    .service-card p { max-width: 50ch; }
+
+    .location-band { background: var(--color-surface); }
+    .location-grid {
+      display: grid;
+      gap: var(--space-6);
+      align-items: start;
+    }
+    .location-copy,
+    .map-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: clamp(var(--space-5), 5vw, var(--space-8));
+    }
+    .location-copy {
+      display: grid;
+      gap: var(--space-5);
+    }
+    .detail-stack {
+      display: grid;
+      gap: var(--space-4);
+    }
+    .detail-block {
+      display: grid;
+      gap: var(--space-1);
+    }
+    .detail-label {
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text-muted);
+    }
+    .detail-value {
+      color: var(--color-text);
+      font-weight: 500;
+    }
+    .hours-list {
+      display: grid;
+      gap: var(--space-3);
+    }
+    .hours-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      padding-bottom: var(--space-3);
+      border-bottom: 1px solid rgba(47,42,38,0.08);
+      font-size: var(--text-sm);
+    }
+    .hours-item:last-child { border-bottom: 0; padding-bottom: 0; }
+    .map-shell {
+      border-radius: calc(var(--radius-xl) - 0.4rem);
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(230,213,195,0.35), rgba(122,139,123,0.14));
+      border: 1px solid rgba(47,42,38,0.08);
+      min-height: 320px;
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+    .map-overlay {
+      position: absolute;
+      inset: auto 1rem 1rem 1rem;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(47,42,38,0.08);
+      border-radius: var(--radius-md);
+      padding: var(--space-4);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .footer {
+      background: #F5F0EA;
+      border-top: 1px solid rgba(47,42,38,0.08);
+      padding-top: var(--space-12);
+      padding-bottom: calc(var(--space-12) + 3rem);
+    }
+    .footer-grid {
+      display: grid;
+      gap: var(--space-8);
+    }
+    .footer-brand {
+      display: grid;
+      gap: var(--space-4);
+    }
+    .footer-nav, .footer-social {
+      display: grid;
+      gap: var(--space-3);
+    }
+    .footer h3 {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .footer-links {
+      display: grid;
+      gap: var(--space-2);
+    }
+    .footer-link {
+      color: var(--color-text-muted);
+      min-height: 36px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .footer-link:hover, .footer-link:focus-visible { color: var(--color-primary-deep); }
+    .social-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
+    .social-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      min-height: 44px;
+      padding: 0.8rem 1rem;
+      border-radius: var(--radius-full);
+      background: rgba(255,255,255,0.74);
+      border: 1px solid rgba(47,42,38,0.08);
+      color: var(--color-text);
+    }
+    .social-chip:hover, .social-chip:focus-visible { color: var(--color-primary-deep); border-color: rgba(122,139,123,0.28); }
+    .footer-base {
+      margin-top: var(--space-8);
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(47,42,38,0.08);
+      color: var(--color-text-muted);
+      font-size: var(--text-xs);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 120;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: var(--color-whatsapp);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 18px 30px rgba(37, 211, 102, 0.28);
+    }
+    .whatsapp-float svg { width: 28px; height: 28px; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 600ms ease, transform 600ms ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+
+    @media (min-width: 720px) {
+      .hero-grid,
+      .location-grid,
+      .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .services-wrap {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 980px) {
+      .desktop-only { display: inline-flex; }
+      .mobile-only { display: none; }
+      .site-nav {
+        display: flex;
+        align-items: center;
+        gap: var(--space-6);
+        margin-left: auto;
+        margin-right: var(--space-4);
+      }
+      .site-nav .nav-list {
+        flex-direction: row;
+        gap: var(--space-5);
+      }
+      .hero-grid {
+        grid-template-columns: 1.08fr 0.92fr;
+        gap: var(--space-10);
+      }
+      .services-wrap {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .location-grid {
+        grid-template-columns: 0.9fr 1.1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1.2fr 0.8fr 0.8fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal, .reveal.visible, .btn, .site-header, .nav-link {
+        transition: none;
+        transform: none;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Ivy Beauty Studio",
+    "image": "https://ivybeautystudio.setmore.com/",
+    "url": "https://ivybeautystudio.setmore.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "La Guácima",
+      "addressLocality": "Alajuela",
+      "postalCode": "20105",
+      "addressCountry": "CR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.011,
+      "longitude": -84.270
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "13:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/ivybeautystudio.cr/"
+    ],
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=XP6V%2BF68%20Gu%C3%A1cima%2C%20Alajuela%2C%20Costa%20Rica"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio de Ivy Beauty Studio">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" fill="none">
+          <rect x="10" y="10" width="44" height="44" rx="22" stroke="currentColor" stroke-width="1.5"></rect>
+          <path d="M24 40.5C27.2 35.6 29.5 30.2 30.8 24M40 23.5C37.7 31.6 34.8 37.2 31 40.5M26.8 24.2C28.6 26.3 31 27.4 34 27.4C36.8 27.4 39.3 26.3 41 24.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+          <path d="M22.5 46.5H41.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-title">Ivy Beauty Studio</span>
+          <span class="brand-subtitle">Manicura & Estética</span>
+        </span>
+      </a>
+
+      <nav class="site-nav desktop-only" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary desktop-only" href="https://ivybeautystudio.setmore.com/" target="_blank" rel="noopener noreferrer">Reservar Ahora</a>
+
+      <button class="nav-toggle mobile-only" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="nav-panel mobile-only" id="mobile-menu">
+      <nav aria-label="Menú móvil">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+          <li><a class="btn btn-primary" href="https://ivybeautystudio.setmore.com/" target="_blank" rel="noopener noreferrer">Reservar Ahora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Estudio profesional en La Guácima</span>
+          <h1>El cuidado y diseño que tus manos merecen.</h1>
+          <p>En Ivy Beauty Studio combinamos detalle, técnica y una atención cercana para crear una experiencia de manicura elegante, cómoda y hecha con criterio profesional.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://ivybeautystudio.setmore.com/" target="_blank" rel="noopener noreferrer">Reservar Mi Cita</a>
+            <a class="btn btn-secondary" href="#servicios">Ver Servicios</a>
+          </div>
+          <div class="hero-notes" aria-label="Beneficios principales">
+            <span>Manicura spa y gel avanzado</span>
+            <span>•</span>
+            <span>Diseños personalizados</span>
+            <span>•</span>
+            <span>Reserva en línea</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="hero-art">
+            <svg viewBox="0 0 640 760" role="img" aria-label="Ilustración editorial de manos cuidadas y detalles botánicos" width="640" height="760">
+              <defs>
+                <linearGradient id="skinA" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#EAD7C8"></stop>
+                  <stop offset="100%" stop-color="#D8BFA9"></stop>
+                </linearGradient>
+                <linearGradient id="skinB" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#F1E4D7"></stop>
+                  <stop offset="100%" stop-color="#DFC7B5"></stop>
+                </linearGradient>
+                <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#9EAF9F"></stop>
+                  <stop offset="100%" stop-color="#718372"></stop>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="760" fill="transparent"></rect>
+              <ellipse cx="330" cy="235" rx="180" ry="125" fill="#F6EEE5"></ellipse>
+              <path d="M196 573C188 490 220 419 302 387C364 363 426 386 465 449C498 502 499 573 475 624C451 674 397 704 339 704C265 704 202 651 196 573Z" fill="url(#skinA)"></path>
+              <path d="M145 547C130 481 143 426 187 390C229 356 282 350 333 371C273 409 239 468 234 538C228 612 256 668 308 707C229 700 162 627 145 547Z" fill="url(#skinB)"></path>
+              <path d="M285 386C303 292 357 242 441 224C489 214 532 226 564 252C502 270 462 306 439 361C418 411 417 468 435 530C375 514 334 478 308 423C302 410 295 396 285 386Z" fill="#E7D3C1"></path>
+              <path d="M315 327C321 294 349 268 381 268C411 268 435 291 436 321C438 353 417 379 386 382C349 386 309 362 315 327Z" fill="#EBC6C6"></path>
+              <path d="M252 460C268 438 292 420 322 407" stroke="#C59C93" stroke-width="6" stroke-linecap="round"></path>
+              <path d="M363 286C387 266 420 259 453 266" stroke="#C7979D" stroke-width="5" stroke-linecap="round"></path>
+              <g opacity="0.95">
+                <path d="M125 216C149 158 191 123 251 112C230 173 192 218 125 216Z" fill="url(#leaf)"></path>
+                <path d="M467 150C520 163 557 199 577 253C520 245 484 213 467 150Z" fill="url(#leaf)"></path>
+                <path d="M108 281C149 266 184 273 217 301C173 323 136 318 108 281Z" fill="#B7C6B6"></path>
+                <path d="M474 595C523 584 561 599 594 638C539 651 499 638 474 595Z" fill="#A8B9A9"></path>
+              </g>
+              <g fill="#A7757F">
+                <rect x="360" y="257" width="21" height="44" rx="10.5" transform="rotate(14 360 257)"></rect>
+                <rect x="390" y="255" width="22" height="47" rx="11" transform="rotate(16 390 255)"></rect>
+                <rect x="421" y="262" width="21" height="43" rx="10.5" transform="rotate(18 421 262)"></rect>
+                <rect x="451" y="276" width="19" height="38" rx="9.5" transform="rotate(22 451 276)"></rect>
+                <rect x="234" y="408" width="20" height="42" rx="10" transform="rotate(-12 234 408)"></rect>
+                <rect x="261" y="392" width="21" height="45" rx="10.5" transform="rotate(-8 261 392)"></rect>
+                <rect x="291" y="381" width="20" height="44" rx="10" transform="rotate(-4 291 381)"></rect>
+                <rect x="321" y="379" width="19" height="40" rx="9.5"></rect>
+              </g>
+            </svg>
+          </div>
+          <div class="hero-card">
+            <strong style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; color: var(--color-text);">Reserva sin complicaciones</strong>
+            <p>Agenda tu espacio en línea y elige el servicio que mejor se adapte al estilo y cuidado que buscas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Servicios destacados</span>
+          <h2 id="servicios-title">Un menú curado para uñas sanas, prolijas y con diseño.</h2>
+          <p>Cada servicio fue presentado con un enfoque limpio y claro para facilitar la decisión y llevar a la reserva sin distracciones.</p>
+        </div>
+
+        <div class="services-wrap">
+          <article class="service-card reveal">
+            <div class="service-top">
+              <h3>Manicura Spa & Esmaltado Regular</h3>
+              <div class="service-meta">
+                <span class="meta-pill">45–60 min</span>
+                <span class="meta-pill">Desde ₡12.000</span>
+              </div>
+            </div>
+            <p>Cuidado tradicional con preparación de uñas, hidratación y acabado pulido para manos frescas y elegantes en el día a día.</p>
+            <a class="btn btn-line" href="https://ivybeautystudio.setmore.com/" target="_blank" rel="noopener noreferrer">Reservar este servicio</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <h3>Esmaltado Gel Semipermanente</h3>
+              <div class="service-meta">
+                <span class="meta-pill">60–75 min</span>
+                <span class="meta-pill">Desde ₡16.000</span>
+              </div>
+            </div>
+            <p>Durabilidad, brillo y una manicura combinada que mantiene la apariencia impecable por más tiempo con un resultado fino.</p>
+            <a class="btn btn-line" href="https://ivybeautystudio.setmore.com/" target="_blank" rel="noopener noreferrer">Reservar este servicio</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <h3>Gel X Après</h3>
+              <div class="service-meta">
+                <span class="meta-pill">90–120 min</span>
+                <span class="meta-pill">Desde ₡24.000</span>
+              </div>
+            </div>
+            <p>Sistema avanzado para un acabado liso, estilizado y moderno, ideal para quienes desean longitud y uniformidad con apariencia cuidada.</p>
+            <a class="btn btn-line" href="https://ivybeautystudio.setmore.com/" target="_blank" rel="noopener noreferrer">Reservar este servicio</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <h3>Builder Gel Cuccio & Luminary</h3>
+              <div class="service-meta">
+                <span class="meta-pill">90 min</span>
+                <span class="meta-pill">Desde ₡22.000</span>
+              </div>
+            </div>
+            <p>Reforzamiento estructural pensado para proteger y fortalecer uñas medianas o largas, con énfasis en salud y soporte.</p>
+            <a class="btn btn-line" href="https://ivybeautystudio.setmore.com/" target="_blank" rel="noopener noreferrer">Reservar este servicio</a>
+          </article>
+
+          <article class="service-card reveal" style="grid-column: 1 / -1; background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(244,239,232,0.92));">
+            <div class="service-top">
+              <h3>Full Diseño Personalizado</h3>
+              <div class="service-meta">
+                <span class="meta-pill">120–150 min</span>
+                <span class="meta-pill">Desde ₡28.000</span>
+              </div>
+            </div>
+            <p>Relieves, técnicas mixtas, pedrería y dibujos personalizados para una propuesta más artística, pensada para quienes quieren un resultado distintivo y trabajado al detalle.</p>
+            <a class="btn btn-primary" href="https://ivybeautystudio.setmore.com/" target="_blank" rel="noopener noreferrer">Agendar Espacio</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location-band" id="ubicacion" aria-labelledby="ubicacion-title">
+      <div class="container location-grid">
+        <div class="location-copy reveal">
+          <div class="section-heading" style="margin-bottom: 0;">
+            <span class="eyebrow">Ubicación y horarios</span>
+            <h2 id="ubicacion-title">Toda la información práctica para visitarnos con facilidad.</h2>
+          </div>
+
+          <div class="detail-stack">
+            <div class="detail-block">
+              <span class="detail-label">Dirección</span>
+              <span class="detail-value">Ivy Beauty Studio, La Guácima, Provincia de Alajuela, 20105, Costa Rica.</span>
+            </div>
+            <div class="detail-block">
+              <span class="detail-label">Código Plus</span>
+              <span class="detail-value">XP6V+F68 Guácima</span>
+            </div>
+          </div>
+
+          <div class="hours-list" aria-label="Horarios de atención">
+            <div class="hours-item"><span>Martes a Viernes</span><strong>1:00 PM - 8:00 PM</strong></div>
+            <div class="hours-item"><span>Sábados</span><strong>8:00 AM - 6:00 PM</strong></div>
+            <div class="hours-item"><span>Domingos</span><strong>9:00 AM - 1:00 PM</strong></div>
+            <div class="hours-item"><span>Lunes</span><strong>Cerrado</strong></div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=XP6V%2BF68%20Gu%C3%A1cima%2C%20Alajuela%2C%20Costa%20Rica" target="_blank" rel="noopener noreferrer">¿Cómo llegar?</a>
+            <a class="btn btn-primary" href="https://ivybeautystudio.setmore.com/" target="_blank" rel="noopener noreferrer">Reservar Cita</a>
+          </div>
+        </div>
+
+        <div class="map-card reveal">
+          <div class="map-shell" role="img" aria-label="Mapa referencial de ubicación en La Guácima, Alajuela">
+            <svg viewBox="0 0 720 520" width="720" height="520" aria-hidden="true">
+              <rect width="720" height="520" fill="#F8F3ED"></rect>
+              <path d="M0 138C137 175 228 200 332 186C425 173 513 126 720 102V0H0Z" fill="#E8DDD0"></path>
+              <path d="M54 438C123 344 183 303 281 274C362 251 450 264 540 221C596 194 644 153 720 131" stroke="#B5C2B5" stroke-width="18" stroke-linecap="round" opacity="0.75"></path>
+              <path d="M112 72C173 116 196 157 196 216C196 260 178 306 150 360" stroke="#D8C1AA" stroke-width="12" stroke-linecap="round" opacity="0.8"></path>
+              <path d="M315 76C399 130 448 179 485 254C519 323 542 368 618 416" stroke="#D8CFC5" stroke-width="10" stroke-linecap="round"></path>
+              <circle cx="421" cy="263" r="48" fill="#FFFFFF" opacity="0.93"></circle>
+              <path d="M421 205C390 205 365 230 365 261C365 304 421 369 421 369C421 369 477 304 477 261C477 230 452 205 421 205Z" fill="#7A8B7B"></path>
+              <circle cx="421" cy="261" r="19" fill="#FAF8F5"></circle>
+              <g fill="#C6D2C6" opacity="0.9">
+                <circle cx="146" cy="142" r="16"></circle>
+                <circle cx="573" cy="128" r="12"></circle>
+                <circle cx="612" cy="334" r="15"></circle>
+                <circle cx="217" cy="390" r="13"></circle>
+              </g>
+            </svg>
+            <div class="map-overlay">
+              <strong style="display:block; color: var(--color-text); margin-bottom: 0.25rem;">Referencia rápida</strong>
+              <p>Ubicación de referencia con el código Plus XP6V+F68 para facilitar la llegada desde Google Maps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand reveal">
+          <div class="brand" style="min-height: auto;">
+            <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" fill="none">
+              <rect x="10" y="10" width="44" height="44" rx="22" stroke="currentColor" stroke-width="1.5"></rect>
+              <path d="M24 40.5C27.2 35.6 29.5 30.2 30.8 24M40 23.5C37.7 31.6 34.8 37.2 31 40.5M26.8 24.2C28.6 26.3 31 27.4 34 27.4C36.8 27.4 39.3 26.3 41 24.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              <path d="M22.5 46.5H41.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+            <span class="brand-text">
+              <span class="brand-title">Ivy Beauty Studio</span>
+              <span class="brand-subtitle">La Guácima, Alajuela</span>
+            </span>
+          </div>
+          <p>Un espacio pensado para clientas que buscan manicura profesional, un trato cuidado y una estética limpia con resultados duraderos.</p>
+        </div>
+
+        <div class="footer-nav reveal">
+          <h3>Navegación</h3>
+          <div class="footer-links">
+            <a class="footer-link" href="#inicio">Inicio</a>
+            <a class="footer-link" href="#servicios">Servicios</a>
+            <a class="footer-link" href="#ubicacion">Ubicación</a>
+            <a class="footer-link" href="https://ivybeautystudio.setmore.com/" target="_blank" rel="noopener noreferrer">Reservar Cita</a>
+          </div>
+        </div>
+
+        <div class="footer-social reveal">
+          <h3>Redes Sociales</h3>
+          <div class="social-row">
+            <a class="social-chip" href="https://www.instagram.com/ivybeautystudio.cr/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Ivy Beauty Studio">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+              <span>Instagram</span>
+            </a>
+            <a class="social-chip" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Canal de TikTok de Ivy Beauty Studio">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14.5 3c.42 2.37 1.8 3.93 4 4.38v2.53a7.27 7.27 0 0 1-3.9-1.27v6.18c0 3.58-2.48 6.18-6.06 6.18A5.94 5.94 0 0 1 2.6 15.1 5.98 5.98 0 0 1 8.58 9.1c.33 0 .66.03.97.09v2.78a3.35 3.35 0 0 0-.9-.13 3.18 3.18 0 1 0 3.2 3.18V3h2.65Z"></path></svg>
+              <span>TikTok</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-base reveal">
+        © <span id="year"></span> Ivy Beauty Studio. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/?text=Hola%20Ivy%20Beauty%20Studio%2C%20me%20gustar%C3%ADa%20realizar%20una%20consulta%20sobre%20sus%20servicios."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Consultar por WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" aria-hidden="true" fill="currentColor">
+      <path d="M27.2 4.8A15.31 15.31 0 0 0 16.34.02C7.9-.12.93 6.66.78 15.1A15.2 15.2 0 0 0 2.86 23.2L.02 31.98l9-2.75a15.29 15.29 0 0 0 7.28 1.85h.01c8.43 0 15.3-6.86 15.31-15.29A15.2 15.2 0 0 0 27.2 4.8Zm-10.9 23.7h-.01a12.7 12.7 0 0 1-6.47-1.77l-.46-.27-5.34 1.63 1.75-5.21-.3-.54a12.63 12.63 0 0 1-1.67-6.27c.01-6.98 5.69-12.66 12.67-12.66 3.38 0 6.56 1.31 8.95 3.71a12.57 12.57 0 0 1 3.71 8.96c-.02 6.98-5.7 12.65-12.68 12.65Zm6.95-9.51c-.38-.19-2.23-1.1-2.57-1.22-.34-.13-.58-.19-.83.19-.25.38-.96 1.22-1.18 1.47-.22.25-.44.28-.82.1-.38-.19-1.61-.59-3.07-1.89-1.14-1.01-1.9-2.26-2.12-2.64-.22-.38-.02-.59.16-.78.16-.16.38-.44.57-.66.19-.22.25-.38.38-.63.13-.25.06-.47-.03-.66-.09-.19-.83-2.01-1.14-2.75-.3-.72-.61-.63-.83-.64l-.71-.01c-.25 0-.66.1-1 .47-.34.38-1.31 1.28-1.31 3.12s1.34 3.62 1.53 3.87c.19.25 2.64 4.03 6.4 5.66.89.38 1.58.61 2.13.78.89.28 1.69.24 2.33.14.71-.11 2.23-.91 2.54-1.79.31-.88.31-1.63.22-1.79-.09-.16-.34-.25-.72-.44Z"></path>
+    </svg>
+  </a>
+
+  <script>
+    const header = document.querySelector('.site-header');
+    const navToggle = document.querySelector('.nav-toggle');
+    const navPanel = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const revealItems = document.querySelectorAll('.reveal');
+
+    const setHeaderState = () => {
+      if (window.scrollY > 12) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    };
+
+    setHeaderState();
+    window.addEventListener('scroll', setHeaderState, { passive: true });
+
+    if (navToggle && navPanel) {
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        navPanel.classList.toggle('open');
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          navToggle.setAttribute('aria-expanded', 'false');
+          navPanel.classList.remove('open');
+        });
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.18 });
+
+    revealItems.forEach((item) => observer.observe(item));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
