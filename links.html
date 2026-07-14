@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Links | Ivy Beauty Studio</title>
+  <meta name="description" content="Accesos rápidos para reservar, ver ubicación y conocer más de Ivy Beauty Studio." />
+  <meta name="theme-color" content="#7A8B7B" />
+  <link rel="icon" type="image/png" href="./imglogoPrincipal.png" />
+  <link rel="apple-touch-icon" href="./imglogoPrincipal.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <style>
+    .links-compact {
+      padding: 1.75rem 0 2.5rem;
+    }
+    .links-compact .page-hero {
+      padding: 1rem 0 1.2rem;
+    }
+    .links-compact .page-hero h1 {
+      font-size: clamp(2rem, 1.7rem + 1vw, 2.8rem);
+      margin: .65rem 0 .55rem;
+    }
+    .links-compact .page-hero p {
+      max-width: 52ch;
+      font-size: .98rem;
+    }
+    .links-compact .section-tight {
+      padding: .8rem 0;
+    }
+    .links-grid {
+      display: grid;
+      gap: .9rem;
+    }
+    .links-grid .social-card,
+    .links-grid .cta-panel {
+      padding: 1.1rem;
+    }
+    .links-grid .social-card h3,
+    .links-grid .section-title {
+      font-size: 1.45rem;
+      margin-bottom: .45rem;
+    }
+    .links-grid .social-card p,
+    .links-grid .section-intro {
+      font-size: .95rem;
+      line-height: 1.55;
+    }
+    .links-grid .stack-actions {
+      margin-top: 1rem;
+      gap: .7rem;
+    }
+    .links-grid .btn {
+      min-height: 44px;
+      padding: .8rem 1.1rem;
+    }
+    .links-primary {
+      text-align: center;
+    }
+    .links-primary .btn {
+      width: 100%;
+      justify-content: center;
+      font-size: 1rem;
+    }
+    .links-social-wrap {
+      display: grid;
+      gap: .75rem;
+    }
+    .links-social-wrap .social-links {
+      justify-content: center;
+      gap: .6rem;
+    }
+    .links-social-wrap .social-links a {
+      padding: .65rem .9rem;
+    }
+    .links-footer {
+      display: none;
+    }
+    @media (min-width: 860px) {
+      .links-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+      }
+      .links-primary {
+        grid-column: 1 / -1;
+      }
+      .links-about {
+        grid-column: 1 / 2;
+      }
+      .links-social-block {
+        grid-column: 2 / 3;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="site-shell">
+    <div class="topbar">¡Espacios limitados para esta semana! Asegura tu día y hora reservando 100% online..</div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand brand-shared" href="index.html" aria-label="Ivy Beauty Studio, inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="./img/logoPrincipal.png" alt="" width="40" height="40" />
+          </span>
+          <span class="brand-name">Ivy Beauty Studio</span>
+        </a>
+
+        <div class="header-mobile-actions">
+          <button class="theme-toggle mobile-theme" type="button" data-theme-toggle aria-label="Cambiar modo"></button>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir menú">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="header-mobile-cta">
+          <a class="btn btn-primary mobile-cta" href="https://ivybeautystudio.setmore.com" target="_blank" rel="noopener noreferrer">Reservar Ahora</a>
+        </div>
+
+        <nav class="mobile-nav-panel" aria-label="Principal móvil">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="links.html" aria-current="page">Links</a></li>
+          </ul>
+        </nav>
+
+        <div class="desktop-cluster">
+          <a class="brand desktop-brand" href="index.html" aria-label="Ivy Beauty Studio, inicio">
+            <span class="brand-mark" aria-hidden="true">
+              <img src="./img/logoPrincipal.png" alt="" width="40" height="40" />
+            </span>
+            <span class="brand-name">Ivy Beauty Studio</span>
+          </a>
+
+          <nav class="desktop-nav" aria-label="Principal escritorio">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="ubicacion.html">Ubicación</a></li>
+              <li><a href="links.html" aria-current="page">Links</a></li>
+            </ul>
+          </nav>
+
+          <a class="btn btn-primary desktop-cta" href="https://ivybeautystudio.setmore.com" target="_blank" rel="noopener noreferrer">Reservar Ahora</a>
+          <button class="theme-toggle desktop-theme" type="button" data-theme-toggle aria-label="Cambiar modo"></button>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido" class="links-compact">
+       
+
+      <section class="section-tight">
+        <div class="container links-grid">
+          <article class="social-card reveal links-primary">
+            <span class="eyebrow">Reserva online</span>
+            <h3>Reservar</h3>
+            <p>Agenda tu cita de forma rápida y directa.</p>
+            <div class="stack-actions">
+              <a class="btn btn-primary" href="https://ivybeautystudio.setmore.com" target="_blank" rel="noopener noreferrer">Reservar Ahora</a>
+              <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=XP6V%2BF68%20Gu%C3%A1cima%2C%20Alajuela%2C%20Costa%20Rica">Ubicación</a>
+            </div>
+          </article>
+
+          <article class="social-card reveal links-about">
+            <span class="eyebrow">Conócenos</span>
+            <h3>Conoce más de nosotros</h3>
+            <p>Explora el estudio, los servicios y nuestra propuesta de valor en pocas secciones.</p>
+            <div class="stack-actions">
+              <a class="btn btn-primary" href="index.html">Inicio</a>
+              <a class="btn btn-secondary" href="servicios.html">Servicios</a>
+            </div>
+          </article>
+
+          <article class="social-card reveal links-social-block">
+            <span class="eyebrow">Redes sociales</span>
+            <h3>Encuéntranos aquí</h3>
+            <p>Acceso directo a nuestras plataformas principales.</p>
+            <div class="links-social-wrap">
+              <div class="social-links">
+                <a href="https://www.instagram.com/ivybeautystudio.cr" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <a href="https://wa.me/?text=Hola%20Ivy%20Beauty%20Studio,%20quiero%20más%20información." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer links-footer">
+      <div class="container" style="padding-top: 1rem;">
+        <small>© 2026 Ivy Beauty Studio. Todos los derechos reservados.</small>
+      </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/?text=Hola%20Ivy%20Beauty%20Studio,%20quiero%20más%20información." target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+        <path d="M19.11 17.2c-.26-.13-1.5-.74-1.73-.82-.23-.09-.4-.13-.57.13-.17.26-.65.82-.8.99-.15.17-.3.19-.56.06-.26-.13-1.09-.4-2.08-1.28-.77-.68-1.29-1.52-1.44-1.78-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.45.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.49c-.17 0-.45.06-.68.32-.23.26-.88.86-.88 2.09s.9 2.43 1.02 2.6c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.5-.61 1.71-1.2.21-.59.21-1.1.15-1.2-.07-.1-.24-.16-.5-.29Z"></path>
+        <path d="M16.02 3.2c-7.07 0-12.8 5.71-12.8 12.76 0 2.26.6 4.47 1.73 6.41L3 29l6.83-1.79a12.8 12.8 0 0 0 6.19 1.58h.01c7.06 0 12.79-5.72 12.79-12.77 0-3.41-1.33-6.61-3.75-9.01A12.73 12.73 0 0 0 16.02 3.2Zm0 23.45h-.01a10.67 10.67 0 0 1-5.44-1.49l-.39-.23-4.05 1.06 1.08-3.95-.25-.4a10.58 10.58 0 0 1-1.63-5.68c0-5.9 4.81-10.7 10.72-10.7 2.86 0 5.55 1.11 7.57 3.12a10.64 10.64 0 0 1 3.14 7.58c0 5.91-4.81 10.71-10.74 10.71Z"></path>
+      </svg>
+    </a>
+  </div>
+
+  <script defer src="./js/main.js"></script>
+</body>
+</html>
