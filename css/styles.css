@@ -171,3 +171,34 @@ button{cursor:pointer;border:0;background:none}
   .brand-shared,.header-mobile-actions,.header-mobile-cta,.mobile-nav-panel{display:none!important}
   .desktop-cluster{display:flex;align-items:center;justify-content:space-between;gap:var(--space-6);width:100%}
 }
+
+.links-social-wrap {
+  margin-top: 1.2rem;
+}
+
+.links-social-wrap .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.links-social-wrap .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #7A8B7B; /* Verde corporativo de Ivy Beauty */
+  color: #ffffff;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+/* Efecto al pasar el cursor */
+.links-social-wrap .social-links a:hover {
+  transform: translateY(-3px);
+  background-color: #5F6E60; /* Un tono de verde más oscuro */
+}
